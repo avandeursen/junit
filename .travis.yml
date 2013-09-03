@@ -3,4 +3,4 @@ jdk:
   - oraclejdk7
 
 after_success:
-  - mvn cobertura:cobertura coveralls:cobertura
+  - mvn cobertura:cobertura -Dcobertura.report.format=xml coveralls:cobertura
